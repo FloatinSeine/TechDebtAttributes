@@ -68,7 +68,6 @@ namespace TechDebtAttributes
         public string Description { get; set; }
         public string Reviewer { get; set; }
         public string BacklogId { get; set; }
-        public int Pain { get; set; }
         public int EffortToFix { get; set; }
 
 
