@@ -43,7 +43,7 @@
     <Compile Include="CleanCodeAttribute.cs" />
     <Compile Include="CleanCodeReporter.cs" />
     <Compile Include="TechDebtPainExceededException.cs" />
-    <Compile Include="Reporter.cs" />
+    <Compile Include="TechDebtReporterr.cs" />
     <Compile Include="TechDebtAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
