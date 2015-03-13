@@ -11,7 +11,7 @@ namespace ExampleUsage
         {
         }
 
-        [CleanCode(IssueType.Solid, Severity.Painful, LevelOfEffort.Large, Description = "Pointless method you wont need.")]
+        [CleanCode(IssueType.Yagni, Severity.Mild, LevelOfEffort.Minor, Description = "Pointless method you wont need.")]
         public void SomeMethod2()
         {
         }

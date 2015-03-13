@@ -9,16 +9,47 @@ A modified Reporter is added to create a Tab delimited output which can be impor
 ##New Parameters are:
 
 Issue Type - The principles being broken or a generic flag for Technical Debt
+
 Severity - Flags relatively how much does this hurt the developer
+
 Level of Effort - Flags relative size of the effort to fix
+
 Reviewer - Who flagged the code
+
 BacklogId - Add a Jira, or similar too, Id to the code to highlight the flagged code has been/submitted for prioritisation
+
+
+#Usage
+The [CleanCode] Attribute has a [Conditional("Debug")] attribute applied so the release code will not be decorate with atttribtues that have no value in the release build.
+
+
+Usage is similar to the original [TechDebt] attribute but [CleanCode] is provided as an alternative to be more descriptive.
+
+
+```
+[CleanCode(IssueType.Yagni, Severity.Mild, LevelOfEffort.Minor, Description = "Pointless interface you wont need."]
+public interface ISomeDumbInterface
+{     
+}
+```
+
+
+The BacklogId and Reviewer fields will allow you to reference back to a User Story or Bug in the tool you use to manage your product backlog.
+
+```
+[CleanCode(IssueType.Yagni, Severity.Mild, LevelOfEffort.Minor, Description = "Pointless interface you wont need.", BacklogId="1000", Reviewer="Steve"]
+public interface ISomeDumbInterface
+{     
+}
+```
 
 
 ## Original Project
 The original project from Jason Roberts is available here:
 
 https://github.com/jason-roberts/TechDebtAttributes/
+
+
 
 
 --------
