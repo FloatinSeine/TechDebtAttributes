@@ -34,7 +34,7 @@ public interface ISomeDumbInterface
 ```
 
 
-The BacklogId and Reviewer fields will allow you to reference back to a User Story or Bug in the tool you use to manage your product backlog.
+The BacklogId and Reviewer fields will allow you to reference back to a User Story or Bug in the tool you use to manage your product backlog and who the code reviewer was.
 
 ```
 [CleanCode(IssueType.Yagni, Severity.Mild, LevelOfEffort.Minor, Description = "Pointless interface you wont need.", BacklogId="1000", Reviewer="Steve"]
