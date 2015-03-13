@@ -45,6 +45,7 @@
     <Compile Include="SillyEnum.cs" />
     <Compile Include="SomeThing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SomeThingToClean.cs" />
     <Compile Include="SomeThingWithDumbConstructor.cs" />
   </ItemGroup>
   <ItemGroup>

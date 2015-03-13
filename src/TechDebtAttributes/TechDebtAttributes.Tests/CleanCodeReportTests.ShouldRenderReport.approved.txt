@@ -1,0 +1,8 @@
+﻿***Start of Tech Debt Report - finding all [TechDebt] attribute usages
+
+Type	Beneft	Severity	Effort	Code	Description	Reviewer	BacklogId
+Yagni	0.7	Mild	Medium	ExampleUsage.SomeThingToClean.Void SomeMethod2()	Pointless method you wont need.		
+Solid	1.5	Painful	Minor	ExampleUsage.SomeThingToClean.Void SomeMethod()	Breaks OCP		
+Solid	0.7	Mild	Medium	ExampleUsage.SomeThingToClean	Lacks an interface.	Steve	1000
+
+***End.
