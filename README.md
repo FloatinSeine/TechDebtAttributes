@@ -1,5 +1,28 @@
 # Track technical debt at the source code level
 
+Decorating your code with attributes to markup where technical debt exists gives an oppertunity to create live documentation directly from source code and compliments standard static analysis tools.
+
+In this fork have added a new atttribute called CleanCode with a different set of properties for highlighting issues within your codebase.
+
+A modified Reporter is added to create a Tab delimited output which can be imported into a spreadsheet or translated and imported into other tools such as SonarQube
+
+##New Parameters are:
+
+Issue Type - The principles being broken or a generic flag for Technical Debt
+Severity - Flags relatively how much does this hurt the developer
+Level of Effort - Flags relative size of the effort to fix
+Reviewer - Who flagged the code
+BacklogId - Add a Jira, or similar too, Id to the code to highlight the flagged code has been/submitted for prioritisation
+
+
+## Original Project
+The original project from Jason Roberts is available here:
+
+https://github.com/jason-roberts/TechDebtAttributes/
+
+
+--------
+
 ## Step 1: Capture
 
 Add attributes to your production code where you find technical debt that you can not currently fix:

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace TechDebtAttributes
 {
@@ -33,6 +34,7 @@ namespace TechDebtAttributes
         Disabling = 5
     }
 
+    [Conditional("DEBUG")]
     [AttributeUsage(
         AttributeTargets.Class | AttributeTargets.Constructor | AttributeTargets.Delegate | AttributeTargets.Enum |
         AttributeTargets.Event | AttributeTargets.Field | AttributeTargets.GenericParameter | AttributeTargets.Interface |
