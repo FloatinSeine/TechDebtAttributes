@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7987BE47-0F7A-4FB0-A395-D0536EF6DF12}</ProjectGuid>
+    <ProjectGuid>{B24235F0-95B6-4E17-9386-C9CE1F635811}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TechDebtAttributes</RootNamespace>
-    <AssemblyName>TechDebtAttributes</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>TechDebtAttributes.Report</RootNamespace>
+    <AssemblyName>TechDebtAttributes.Report</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,22 +30,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CleanCodeAttribute.cs" />
-    <Compile Include="CleanCodeReporter.cs" />
-    <Compile Include="TechDebtPainExceededException.cs" />
-    <Compile Include="TechDebtReporterr.cs" />
-    <Compile Include="TechDebtAttribute.cs" />
+    <Compile Include="AssemblyAnalyser.cs" />
+    <Compile Include="Configuration\CleanCodeConfigurationSection.cs" />
+    <Compile Include="Configuration\ReportConfigurationElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportBuilder.cs" />
+    <Compile Include="Schema\CleanCodeReport.cs" />
+    <Compile Include="Schema\DebtElement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TechDebtAttributes.nuspec">
-      <SubType>Designer</SubType>
-    </None>
+    <ProjectReference Include="..\TechDebtAttributes\TechDebtAttributes.csproj">
+      <Project>{7987be47-0f7a-4fb0-a395-d0536ef6df12}</Project>
+      <Name>TechDebtAttributes</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

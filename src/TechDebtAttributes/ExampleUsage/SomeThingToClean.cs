@@ -2,7 +2,7 @@
 
 namespace ExampleUsage
 {
-    [CleanCode(IssueType.Solid, Severity.Mild, LevelOfEffort.Medium, Description = "Lacks an interface.",BacklogId = "1000", Reviewer = "Steve")]
+    [CleanCode(IssueType.Solid, Severity.Mild, LevelOfEffort.Medium, Description = "Lacks an interface.", BacklogId = "1000", Reviewer = "Steve")]
     public class SomeThingToClean
     {
 
