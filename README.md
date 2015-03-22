@@ -42,6 +42,18 @@ public interface ISomeDumbInterface
 {     
 }
 ```
+#Reporting
+Run the TechDebtReporting command line utility will output a report in XML format. 
+
+Update the App.config binaries property to select where the DLLs you want to scan exist and edit the report property to suggest where to save the XMl report.
+
+App.config
+```
+   <cleanCode>
+      <folders binaries="c:\[pathToDllsToScan]"
+               report="c:\[pathToSaveReports]"/>
+   </cleanCode>
+```
 
 
 ## Original Project

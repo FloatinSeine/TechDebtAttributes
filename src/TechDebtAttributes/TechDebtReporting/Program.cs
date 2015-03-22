@@ -19,7 +19,7 @@ namespace TechDebtReporting
             var rpt = report.BuildReport(analyser.Analyse());
 
             var xmlFile = Configuration.ReportConfiguration.ReportFolder + @"\cleancode_rpeort.xml";
-            //SaveXmlReport(xmlFile, rpt);
+            SaveXmlReport(xmlFile, rpt);
 
             PrintReport(rpt);
 
