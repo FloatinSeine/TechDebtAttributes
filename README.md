@@ -55,6 +55,28 @@ App.config
    </cleanCode>
 ```
 
+A sample report
+```
+<?xml version="1.0" encoding="utf-8"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <date>2015-03-22T03:53:33.2055255Z</date>
+  <codeToClean>
+    <item issue="Solid" benefit="1.5" severity="Painful" effort="Minor">
+      <code>ExampleUsage.SomeThingToClean.SomeMethod</code>
+      <description>Breaks OCP</description>
+    </item>
+    <item issue="Yagni" benefit="1" severity="Mild" effort="Minor">
+      <code>ExampleUsage.SomeThingToClean.SomeMethod2</code>
+      <description>Pointless method you wont need.</description>
+    </item>
+    <item issue="Solid" benefit="0.66666666666666663" severity="Mild" effort="Medium" reviewer="Steve" backlogId="1000">
+      <code>SomeThingToClean</code>
+      <description>Lacks an interface.</description>
+    </item>
+  </codeToClean>
+</report>
+```
+
 
 ## Original Project
 The original project from Jason Roberts is available here:
